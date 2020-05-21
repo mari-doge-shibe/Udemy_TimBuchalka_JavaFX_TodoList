@@ -53,6 +53,7 @@ public class Controller {
                 if(newValue != null) {
                     TodoItem item = todoListView.getSelectionModel().getSelectedItem();
                     itemDetailsTextArea.setText(item.getDetails());
+                    deadlineLabel.setText(item.getDeadline().toString());
                 }
             }
         });
