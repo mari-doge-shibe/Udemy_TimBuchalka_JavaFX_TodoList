@@ -50,7 +50,7 @@ public class Controller {
     public void handleClickListView() {
         TodoItem item = todoListView.getSelectionModel().getSelectedItem();
 //        System.out.println("The selected item is " + item);
-
+        itemDetailsTextArea.setText(item.getDetails());
 
     }
 
