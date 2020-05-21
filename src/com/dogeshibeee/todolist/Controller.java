@@ -1,6 +1,7 @@
 package com.dogeshibeee.todolist;
 
 import com.dogeshibeee.todolist.datamodel.TodoItem;
+import com.sun.tools.javac.comp.Todo;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
@@ -39,6 +40,12 @@ public class Controller {
         todoListView.getItems().setAll(todoItems);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
+    }
+
+    @FXML
+    public void handleClickListView() {
+        TodoItem item = (TodoItem) todoListView.getSelectionModel().getSelectedItem();
+        System.out.println("The selected item is " + item);
     }
 
 }
