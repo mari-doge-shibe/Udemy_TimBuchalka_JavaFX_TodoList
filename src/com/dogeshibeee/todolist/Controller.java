@@ -2,8 +2,9 @@ package com.dogeshibeee.todolist;
 
 import com.dogeshibeee.todolist.datamodel.TodoItem;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
 
-import javax.swing.text.html.ListView;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -34,6 +35,9 @@ public class Controller {
         todoItems.add(item3);
         todoItems.add(item4);
         todoItems.add(item5);
+
+        todoListView.getItems().setAll(todoItems);
+        todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
     }
 
