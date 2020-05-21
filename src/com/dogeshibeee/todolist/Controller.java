@@ -1,7 +1,9 @@
 package com.dogeshibeee.todolist;
 
 import com.dogeshibeee.todolist.datamodel.TodoItem;
+import javafx.fxml.FXML;
 
+import javax.swing.text.html.ListView;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -10,6 +12,9 @@ import java.util.List;
 public class Controller {
 
     private List<TodoItem> todoItems;
+
+    @FXML
+    private ListView todoListView;
 
     public void initialize() {
         TodoItem item1 = new TodoItem("Mail birthday card", "Buy a 30th birthday card for John",
