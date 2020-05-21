@@ -4,6 +4,7 @@ import com.dogeshibeee.todolist.datamodel.TodoItem;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
@@ -21,6 +22,14 @@ public class Controller {
                 LocalDate.of(2016, Month.MARCH, 23));
         TodoItem item5 = new TodoItem("Pick up dry cleaning", "The clothes should be ready by Wednesday",
                 LocalDate.of(2016, Month.APRIL, 20));
+
+        todoItems = new ArrayList<TodoItem>();
+        todoItems.add(item1);
+        todoItems.add(item2);
+        todoItems.add(item3);
+        todoItems.add(item4);
+        todoItems.add(item5);
+
     }
 
 }
