@@ -1,5 +1,6 @@
 package com.dogeshibeee.todolist;
 
+import com.dogeshibeee.todolist.datamodel.TodoData;
 import com.dogeshibeee.todolist.datamodel.TodoItem;
 import com.sun.tools.javac.comp.Todo;
 import javafx.beans.value.ChangeListener;
@@ -48,7 +49,7 @@ public class Controller {
         todoItems.add(item4);
         todoItems.add(item5);
 
-
+        TodoData.getInstance().setTodoItems(todoItems);
 
         todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
             @Override
