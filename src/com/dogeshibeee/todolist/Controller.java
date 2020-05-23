@@ -48,6 +48,8 @@ public class Controller {
         todoItems.add(item4);
         todoItems.add(item5);
 
+
+
         todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
             @Override
             public void changed(ObservableValue<? extends TodoItem> observable, TodoItem oldValue, TodoItem newValue) {
