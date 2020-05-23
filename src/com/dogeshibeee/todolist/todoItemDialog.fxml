@@ -1,0 +1,3 @@
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:controller="com.dogeshibeee.todolist.DialogController"
+            xmlns:fx="http://javafx.com/fxml">
