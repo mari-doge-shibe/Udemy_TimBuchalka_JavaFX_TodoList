@@ -6,8 +6,12 @@ import com.sun.tools.javac.comp.Todo;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
@@ -26,6 +30,9 @@ public class Controller {
 
     @FXML
     private Label deadlineLabel;
+
+    @FXML
+    private BorderPane mainBorderPane;
 
     public void initialize() {
 
@@ -50,6 +57,13 @@ public class Controller {
     @FXML
     public void showNewItemDialog() {
         Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.initOwner(mainBorderPane.getScene().getWindow());
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("todoItemDialog.fxml"));
+            dialog.getDialogPane().setContent(root);
+        } catch(IOException e) {
+            System.out.println("Couldn't load the dialog");
+        }
 
     }
 
