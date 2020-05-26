@@ -73,7 +73,6 @@ public class Controller {
         if(result.isPresent() && result.get() == ButtonType.OK) {
             DialogController controller = fxmlLoader.getController();
             TodoItem newItem = controller.processResults();
-
             todoListView.getSelectionModel().select(newItem);
 
         } else {

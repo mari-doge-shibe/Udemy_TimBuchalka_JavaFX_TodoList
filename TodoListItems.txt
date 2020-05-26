@@ -7,3 +7,5 @@ My new TodoI Item	This is a new todo item	27-05-2020
 One more new item	Test test test	29-05-2020
 3rd item added	Test for the third item after deleting the extra code	29-05-2020
 Item should be selected	This item should be selected	27-05-2020
+MyShortTest	This is a short test demo	30-05-2020
+test again	new test	30-05-2020
