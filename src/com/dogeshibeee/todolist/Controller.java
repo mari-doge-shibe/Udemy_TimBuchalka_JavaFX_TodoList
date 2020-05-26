@@ -52,12 +52,17 @@ public class Controller {
         todoListView.setCellFactory(new Callback<ListView<TodoItem>, ListCell<TodoItem>>() {
             @Override
             public ListCell<TodoItem> call(ListView<TodoItem> param) {
-                ListCell<TodoItem> cell = new ListCell<TodoItem>();
-                
+                ListCell<TodoItem> cell = new ListCell<TodoItem>(){
 
+                    @Override
+                    protected void updateItem(TodoItem item, boolean empty) {
+                        super.updateItem(item, empty);
+                    }
+                };
+                
+                return cell;
             }
         });
-
     }
 
     @FXML
