@@ -4,7 +4,6 @@ Finish design proposal for client	I promiesed Mike I'd email website mockups by 
 Pickup Doug at the train station	Doug's arriving on March 23 on the 5:00 train	23-03-2016
 Pick up dry cleaning	The clothes should be ready by Wednesday	20-04-2016
 My new TodoI Item	This is a new todo item	27-05-2020
-One more new item	Test test test	29-05-2020
 3rd item added	Test for the third item after deleting the extra code	29-05-2020
 Item should be selected	This item should be selected	27-05-2020
 MyShortTest	This is a short test demo	30-05-2020
